@@ -4,6 +4,7 @@ class Link
 
   property :id, Serial
   property :title, String
-  propery :url, String
+  property :url, String
 
+  has n, :tags, :through => Resource
 end
